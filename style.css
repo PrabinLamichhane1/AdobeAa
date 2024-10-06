@@ -1,0 +1,71 @@
+/* Body background for a more muted feel */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    to right,
+    #f6d365,
+    #fda085
+  ); /* Muted pastel gradient */
+  margin: 0;
+  padding: 20px;
+  color: #333; /* Softer text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Softer canvas border and box shadow */
+canvas {
+  border: 2px solid rgba(255, 255, 255, 0.7); /* Lighter border */
+  border-radius: 15px;
+  background-color: #f7f7f7; /* Soft off-white background */
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08); /* Less prominent shadow */
+}
+
+/* Buttons with softer hover effects */
+button {
+  margin: 15px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #a29bfe; /* Muted pastel color */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #81ecec; /* Slightly brighter pastel hover color */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+button#clearCanvas {
+  background-color: #74b9ff; /* Light blue */
+}
+
+button#clearCanvas:hover {
+  background-color: #00cec9; /* Soft green */
+}
+
+/* Muted controls */
+.controls input[type="color"] {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.7); /* Lighter border */
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+input[type="range"] {
+  background: linear-gradient(
+    90deg,
+    #dfe6e9 0%,
+    #b2bec3 100%
+  ); /* Muted range slider */
+}
